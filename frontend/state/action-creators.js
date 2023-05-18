@@ -63,7 +63,7 @@ export function postAnswer(form) {
       console.log(res.data)
     
     dispatch(resetForm())
-    dispatch(setInfoMessage(`Congrats: "${form.newQuestion}?" is a great question!`))
+    dispatch(setInfoMessage(`Congrats: "${form.newQuestion}" is a great question!`))
     dispatch(fetchQuiz())
     })
     
