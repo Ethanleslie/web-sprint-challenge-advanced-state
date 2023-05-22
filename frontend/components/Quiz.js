@@ -5,7 +5,12 @@ import * as actions from '../state/action-creators'
 
 export function Quiz(props) {
   useEffect(() => {
+    if(props.quiz === null){
       props.fetchQuiz()
+    }else {
+      
+    }
+      
     
   }, [])
   
